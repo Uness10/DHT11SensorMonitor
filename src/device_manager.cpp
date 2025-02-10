@@ -1,9 +1,9 @@
 #include "device_manager.h"
 
-void blinkLED() {
-    digitalWrite(LED_BUILTIN, !digitalRead(LED_BUILTIN));  // Toggle the LED state
+void setupDeviceManager() {
+    pinMode(2, OUTPUT);  // Set up GPIO2 (built-in LED on ESP8266)
 }
 
-void setupDeviceManager() {
-    pinMode(LED_BUILTIN, OUTPUT);  // Set up the LED pin
+void blinkLED() {
+    digitalWrite(2, !digitalRead(2));  // Toggle the LED on GPIO2
 }

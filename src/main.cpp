@@ -1,16 +1,23 @@
-#include <Arduino.h>
-#include "task_manager.h"
-#include "device_manager.h"
+#include <ESP8266WiFi.h>
+
+const char* ssid = "your_SSID";
+const char* password = "your_PASSWORD";
 
 void setup() {
-    Serial.begin(9600);  // Start serial communication for debugging
+    Serial.begin(9600);
 
-    setupDeviceManager();  // Initialize devices (LED in this case)
+    // Connect to Wi-Fi
+    WiFi.begin(ssid, password);
+    while (WiFi.status() != WL_CONNECTED) {
+        delay(1000);
+        Serial.println("Connecting to WiFi...");
+    }
+    Serial.println("Connected to WiFi");
 
-    // Add tasks to the task scheduler
-    addTask(blinkLED, 1000);  // Blink the LED every 1000ms
+    setupDeviceManager();
+    addTask(blinkLED, 1000);
 }
 
 void loop() {
-    runTasks();  // Execute all scheduled tasks
+    runTasks();
 }

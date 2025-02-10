@@ -1,7 +1,7 @@
 #ifndef TASK_MANAGER_H
 #define TASK_MANAGER_H
 
-#include <Arduino.h>
+#include <ESP8266WiFi.h>
 #define MAX_TASKS 5  // Maximum number of tasks
 
 struct Task {
