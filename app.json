@@ -4,11 +4,11 @@
     "slug": "DHTMonitor",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/hehe.jpg",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/hehe.jpg",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,9 +17,10 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/hehe.jpg",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.ouv.DHTMonitor"
     },
     "web": {
       "favicon": "./assets/favicon.png"
