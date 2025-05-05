@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "DHTMonitor",
+    "slug": "DHTMonitor",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/hehe.jpg",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/hehe.jpg",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/hehe.jpg",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.ouv.DHTMonitor"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
